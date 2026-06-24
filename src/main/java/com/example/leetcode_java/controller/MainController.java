@@ -22,4 +22,9 @@ public class MainController {
         routeService.addToQueue(no);
         return "added";
     }
+
+    @GetMapping("/Results")
+    public String Results(){
+        return "success";
+    }
 }
