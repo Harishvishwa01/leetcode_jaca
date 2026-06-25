@@ -1,5 +1,4 @@
 package com.example.leetcode_java.model;
-
 import lombok.Data;
 
 import java.util.UUID;
