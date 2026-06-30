@@ -19,5 +19,7 @@ public class RouteService {
         queue.add(no);
     }
 
-
+  public String greetSujith(){
+        return "hello sujith";
+  }
 }

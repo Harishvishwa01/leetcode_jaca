@@ -19,6 +19,11 @@ public class MainController {
         return routeService.greet();
     }
 
+    @GetMapping("/sujith")
+    public String getName(){
+        return routeService.greetSujith();
+    }
+
     @PostMapping("/submission/{id}")
     public ResponseEntity<SubmissionDto> submission(
             @PathVariable String id,
@@ -28,7 +33,7 @@ public class MainController {
 
             SubmissionDto response = new SubmissionDto(
                     "Submission successful",   // msg
-                    true,                      // status
+                    submission.getStatus(),                      // status
                     submission.getUserId(),    // UserId
                     UUID.randomUUID()                         // Question_id
             );
